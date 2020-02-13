@@ -143,16 +143,7 @@ iframe{
     font-size: 70px;
     font-family: "Browallia-New";
 }
-#direct .chaine{
-    padding-bottom: 30px;
-}
-#direct .chaine img{
-    width: 30%;
-    transition: 0.5s;
-}
-#direct .chaine img:hover{
-    width: 50%;
-}
+
 /*FOOTER*/
 footer{
     background-color: #080808;
