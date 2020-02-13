@@ -38,6 +38,9 @@ img{
     width: 100%;
     border: none;
 }
+p{
+    font-size: 20px;
+}
 .container-fluid{
     width: 90%;
     margin: 0 auto;
@@ -110,9 +113,11 @@ iframe{
 }
 #hero-film-text img{
     width: 50%;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
-
+#hero-film-text p{
+    width: 822px;
+}
 /* QUEEN SECTION */
 #queen-live img{
     width: 90%;
@@ -121,14 +126,24 @@ iframe{
 #queen-live p{
     transform: rotate(-90deg);
     position: absolute;
-    padding-bottom: 380px;
+    padding-bottom: 470px;
     z-index: 99999;
-    font-size: 25px;
+    font-size: 30px;
+}
+#queen-live .separator{
+    background-color: #fff;
+    height: 840px;
+    width: 4px;
+    position: absolute;
+    z-index: 99999;
+    left: 0px;
 }
 #queen-logo, #queen-explication{
     padding-top: 300px;
 }
-
+#queen-explication p{
+    width: 762px;
+}
 /* CATEGORIES TV SECTION */
 #categories-tv{
     padding-top: 20px;
@@ -138,17 +153,34 @@ iframe{
     width: 90%;
     padding-top: 50px;
 }
+#categories-list p,
+#mes-videos-list p{
+    margin-top: 20px;
+}
 #nav-serie, #nav-film{
     padding-top: 10px;
 }
 #nav-serie a, #nav-film a{
-    margin: 5px;
+    margin: 10px;
 }
-#nav-serie a:first-child, #nav-film a:first-child{
+#nav-film, #nav-serie{
+    display: flex;
+    justify-content: center;
+}
+#nav-serie li:first-child a, #nav-film li:first-child a{
     border-bottom: 2px solid #fff;
 }
+#direct .chaine{
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: center;
+}
 #direct .chaine img{
-    width: 50%;
+    width: 100%;
+}
+#direct .chaine a{
+    margin: 10px;
 }
 #series img, #film img{
     margin-bottom: 20px;
@@ -207,6 +239,12 @@ footer #rs a{
 #content-profil h2{
     font-family: "Browallia-New";
     font-size: 65px;
+    margin-left: 100px;
+}
+#content-profil p{
+    width: 480px;
+    margin-left: 100px;
+    font-size: 17px;
 }
 #stars{
     padding-top: 50px;
@@ -265,13 +303,16 @@ footer #rs a{
         transform: rotate(0deg);
         font-size: 16px;
     }
+    #queen-live .separator{
+        display: none;
+    }
 }
 @media (max-width: 991px) {
     .navbar-nav{
         text-align: center;
     }
     .nav-item .nav-link img{
-        width: 5%;
+        width: 10%;
     }
     #hero-film-img img{
         display: block;
@@ -290,6 +331,14 @@ footer #rs a{
     #stars{
         text-align: center;
     }
+    #queen-explication p, 
+    #hero-film-text p,
+    #content-profil p,
+    #content-profil h2{
+        width: 100%;
+        margin-left: 0px;
+    }
+
 }
 
 @media (max-width: 767px) {
