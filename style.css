@@ -1,0 +1,334 @@
+/* FONTS */
+@font-face {
+    font-family: "SF Pro Display Bold";
+    src: url("./assets/fonts/SF-Pro-Text-Bold.otf")
+}
+@font-face {
+    font-family: "SF Pro Display Light";
+    src: url("./assets/fonts/SF-Pro-Text-Light.otf")
+}
+@font-face {
+    font-family: "Browallia-New";
+    src: url("./assets/fonts/Browallia-New.ttf")
+}
+/****************
+    GENERAL 
+****************/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: "SF Pro Display Light", Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4{
+    color: #fff;
+}
+p{
+    color: #fff;
+}
+a, a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+    border: none;
+}
+.container-fluid{
+    width: 90%;
+    margin: 0 auto;
+}
+iframe{
+    margin-bottom: 100px;
+}
+/**************************
+    SECTIONS - INDEX
+***************************/
+
+/* HEADER - NAVBAR */
+.navbar{
+    background-color: transparent;
+}
+.nav-link{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav-item img{
+    width: 50%;
+}
+.navbar-brand img{
+    width: 80%;
+}
+.navbar-toggler{
+    width: 70px;
+    height: 24px;
+    position: relative;
+    background-color: transparent;
+}
+.icon-bar{
+    display: block;
+    height: 4px;
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.icon-bar:nth-child(1){
+    width: 50%;
+}
+.icon-bar:nth-child(2){
+    width: 100%;
+}
+.icon-bar:nth-child(3){
+    width: 50%;
+    transform: translate(100%);
+}
+/* HERO */
+#hero{
+    padding-top: 20px;
+}
+#hero-film-img img{
+    width: 90%;
+}
+#hero-film-text img{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+/* QUEEN SECTION */
+#queen-live img{
+    width: 90%;
+    position: relative;
+}
+#queen-live p{
+    transform: rotate(-90deg);
+    position: absolute;
+    padding-bottom: 380px;
+    z-index: 99999;
+    font-size: 25px;
+}
+#queen-logo, #queen-explication{
+    padding-top: 300px;
+}
+
+/* CATEGORIES TV SECTION */
+#categories-tv{
+    padding-top: 20px;
+}
+#categories-list img,
+#mes-videos-list img{
+    width: 90%;
+    padding-top: 50px;
+}
+#nav-serie, #nav-film{
+    padding-top: 10px;
+}
+#nav-serie a, #nav-film a{
+    margin: 5px;
+}
+#nav-serie a:first-child, #nav-film a:first-child{
+    border-bottom: 2px solid #fff;
+}
+#direct .chaine img{
+    width: 50%;
+}
+#series img, #film img{
+    margin-bottom: 20px;
+}
+#series h1, #film h1, #direct h1{
+    font-size: 70px;
+    font-family: "Browallia-New";
+}
+
+/*FOOTER*/
+footer{
+    background-color: #080808;
+    padding: 40px 0;
+}
+footer ul{
+    padding: 0;
+}
+footer a{
+    font-size: 13px;
+}
+footer .contact-btn{
+    margin-top: 30px;
+}
+footer .contact-btn a{
+    padding: 15px 70px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+footer .contact-btn a:hover{
+    background: #fff;
+    color: black;
+}
+footer #rs{
+    margin-top: 20px;
+}
+footer #rs a{
+    font-size: 20px;
+    margin: 10px;
+}
+
+/*******************************
+    SECTIONS - PAGE PROFIL
+********************************/
+
+#profil #profil-picture img{
+    width: 10%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#content-profil, #picture-film{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#content-profil h2{
+    font-family: "Browallia-New";
+    font-size: 65px;
+}
+#stars{
+    padding-top: 50px;
+    text-align: center;
+}
+#stars p i{
+    margin: 3px;
+}
+#stars p:nth-child(1){
+    font-size: 13px;
+}
+#stars p:nth-child(1) i:nth-child(1){
+    color: yellow;
+}
+#stars p:nth-child(2){
+    font-size: 16px;
+}
+#stars p:nth-child(2) i:nth-child(1),
+#stars p:nth-child(2) i:nth-child(2){
+    color: yellow;
+}
+#stars p:nth-child(3){
+    font-size: 19px;
+}
+#stars p:nth-child(3) i{
+    color: yellow;
+}
+#stars p:nth-child(3) i:last-child{
+    color: white;
+}
+#stars p:nth-child(4){
+    font-size: 22px;
+}
+#stars p:nth-child(4) i{
+    color: yellow;
+}
+#picture-film img{
+    margin-bottom: 20px;
+}
+
+
+/*--------------------*/
+/* RESPONSIVE STYLE */
+/*--------------------*/
+@media (max-width: 1199px) {
+    #queen-logo, #queen-explication{
+        padding-top: 150px;
+    }
+    #queen-live{
+        padding-top: 50px;
+    }
+    #queen-live img{
+        margin-top: 30px;
+    }
+    #queen-live p{
+        transform: rotate(0deg);
+        font-size: 16px;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-nav{
+        text-align: center;
+    }
+    .nav-item .nav-link img{
+        width: 5%;
+    }
+    #hero-film-img img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #hero-film-text img{
+        padding-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #queen-logo, #queen-explication{
+        padding-top: 50px;
+    }
+    #stars{
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand{
+        width: 50%;
+    }
+    .navbar-brand img{
+        width: 100%;
+    }
+    #stars{
+        padding-left: 50px;
+    }
+    #picture-film{
+        padding-top: 0;
+        padding-bottom: 100px;
+    }
+    #profil #profil-picture img{
+        width: 30%;
+    }
+    .contact-btn{
+        text-align: center;
+    }
+    footer #rs{
+        padding-top: 10px;
+        display: block;
+        text-align: center;
+    }
+    footer ul{
+        text-align: center;
+    }
+    footer .navbar-brand{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 360px) {
+
+}
+
+
+
+
+
+
+
+
