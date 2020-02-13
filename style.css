@@ -45,6 +45,20 @@ img{
 iframe{
     margin-bottom: 100px;
 }
+.image {
+    display: inline-block;
+    border: 1px solid black;
+    overflow: hidden;           
+}
+.image img {
+    display: block;
+    transition: transform .5s;
+}
+.image:hover img {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+}
+
 /**************************
     SECTIONS - INDEX
 ***************************/
@@ -325,21 +339,6 @@ footer #rs a{
 
 }
 
-
-
-.image {
-    display: inline-block;
-    border: 1px solid black;
-    overflow: hidden;           
-  }
-  .image img {
-    display: block;
-    transition: transform .5s;
-  }
-  .image:hover img {
-    transform: scale(1.2);
-    transform-origin: 50% 50%;
-  }
 
 
 
